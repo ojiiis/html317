@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <script>
+    /*
+    literal object
+     var person = {
+        name:["Samuel","Loco"],
+        class:"JavaScript",
+        score:80
+     }
+     console.log(person.name[1])
+    */
+ 
+    /* functional object
+        function person(){
+       this.name = "Patience"
+       this.class = "JavaScript"
+       this.score = 20
+       this.whoami = function(){
+        console.log(this.name+" "+this.class+" "+this.score)
+       }  
+    }
+
+        function person(){
+       this.names = ["Patience","Rohimat","James","Ella"]
+       this.classes =["JavaScript","css","Html"]
+       this.score = 20
+       this.getNameByKey = function(key){
+        return this.names[key]
+       } 
+       this.getClassByKey = function(key){
+        return this.classes[key]
+       }  
+    }
+
+
+    console.log(new person().getNameByKey(3))
+    */
+
+
+
+/*
+setTimeout(function(){
+alert("I triggered after 2 seconds")
+},2000)
+
+var b = 34
+
+var msg = 'i score '+b \\concatination with +
+var msg = `i score ${b}` \\concatination with template string
+
+
+*/
+
+
+/*
+implementing functional object 
+
+
+      function balls(s,c){
+        this.size = s
+        this.color = c
+        this.show = function(t){
+           var self = this;
+            setTimeout(function(){
+         document.body.innerHTML= `<div style="width:${self.size}px;height:${self.size}px;border-radius:50%;background:${self.color}"></div>`+document.body.innerHTML
+            },t)
+        }
+      }
+ var b = new balls(50,'green');
+ b.show(2000)
+ var b = new balls(150,'pink');
+ b.show(5000)
+ var b = new balls(250,'orange');
+ b.show(10000)
+*/
+
+
+
+       // document.head.innerText = "Hello world"
+    </script>
+</body>
+</html>
